@@ -58,6 +58,13 @@
     opacity: 1;
 }
 
+@media (hover: none)  {
+    .favorite-icon:hover .favorite-tooltip {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
 .card__wrapper {
     display: flex;
 }
