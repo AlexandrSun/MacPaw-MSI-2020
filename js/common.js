@@ -57,7 +57,7 @@ $(".favorite-open-button").on("click", () => {
     slideOnFavoritePanel()
 });
 
-$(".favorite-close-button").on("click", () => {
+$(".favorite-close-button, .blackout").on("click", () => {
     slideOffFavoritePanel();
 });
 
@@ -80,6 +80,8 @@ function slideOffFavoritePanel() {
         $(".blackout").css("display", "none");
     }, 150);
 }
+
+// Emergency slide off Favorite
 
 $(window).on("load resize", changeWindowSize);
 
